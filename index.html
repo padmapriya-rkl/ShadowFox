@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding and viewport settings for responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Title of the webpage -->
+  <title>FarmFresh - Fresh from the Farm</title>
+  
+  <!-- External font (Poppins) and FontAwesome for icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Link to external CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Preconnect and DNS prefetch for faster image loading -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+</head>
+
+<body>
+  <!-- Header section with logo and navigation menu -->
+  <header class="header">
+    <div class="logo">
+      <!-- Logo with a leaf icon and text -->
+      <i class="fas fa-leaf"></i> FarmFresh
+    </div>
+
+    <!-- Navigation menu -->
+    <nav class="nav">
+      <!-- Links to other pages on the site -->
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <!-- Profile link will only be visible if the user is logged in -->
+      <a href="profile.html" id="profileLink" style="display: none;">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Banner section with a slideshow of images -->
+  <section class="banner">
+    <div class="slideshow">
+      <!-- Each slide has a background image -->
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1518977676601-b53fccaba6b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1579113800032-c38bd7635818?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <!-- Additional 4 new images -->
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1601493700145-0092603fd8b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1603569293043-3d5b2a2b3b3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+    </div>
+    
+    <!-- Banner content with a heading, description, and button -->
+    <div class="banner-content">
+      <h1>Fresh From the Fields</h1>
+      <p>Hand-picked fruits and vegetables, straight from<br>trusted local farmers.</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Features section displaying key selling points -->
+  <section class="features">
+    <div class="feature">
+      <!-- Icon for farm fresh produce -->
+      <i class="fas fa-apple-alt icon"></i>
+      <h3>Farm Fresh</h3>
+      <p>Harvested and delivered within 24 hours.</p>
+    </div>
+    <div class="feature">
+      <!-- Icon for supporting farmers -->
+      <i class="fas fa-hand-holding-heart icon"></i>
+      <h3>Support Farmers</h3>
+      <p>Your order helps boost rural economy.</p>
+    </div>
+    <div class="feature">
+      <!-- Icon for doorstep delivery -->
+      <i class="fas fa-truck icon"></i>
+      <h3>Doorstep Delivery</h3>
+      <p>Safe and eco-friendly packaging included.</p>
+    </div>
+  </section>
+
+  <!-- Footer section with copyright message -->
+  <footer class="footer">
+    <p>&copy; 2025 FarmFresh. Made with <i class="fas fa-heart"></i> for local farmers.</p>
+  </footer>
+
+  <!-- JavaScript file for additional functionality -->
+  <script src="script.js"></script>
+  
+  <!-- Script to check if the user is logged in and update the navigation links -->
+  <script>
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    
+    if (isLoggedIn) {
+      // Show profile link and hide login link if the user is logged in
+      document.getElementById('profileLink').style.display = 'inline';
+      document.getElementById('loginLink').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

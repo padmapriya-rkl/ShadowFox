@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmFresh - Our Products</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><i class="fas fa-leaf"></i> FarmFresh</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="cart.html.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="products-header">
+    <h1>Fresh Farm Produce</h1>
+    <p>All items sold by weight (kg)</p>
+  </section>
+
+  <section class="product-filters">
+    <section class="product-search">
+  <input type="text" id="searchInput" placeholder="Search products...">
+</section>
+
+    <div class="filter-group">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option>All</option>
+        <option>Vegetables</option>
+        <option>Fruits</option>
+        <option>Leafy Greens</option>
+        <option>Seeds</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option>Featured</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="products-grid">
+    <!-- Root Vegetables -->
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Potatoes">
+      <div class="product-info">
+        <h3>Potatoes</h3>
+        <div class="product-meta">
+          <span class="price">₹25/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Freshly harvested, great for all cooking needs</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fycm90fGVufDB8fDB8fHww" alt="Carrots">
+      <div class="product-info">
+        <h3>Carrots</h3>
+        <div class="product-meta">
+          <span class="price">₹35/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Sweet and crunchy, rich in beta-carotene</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://plus.unsplash.com/premium_photo-1723485627473-7227c17bf7ef?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFkZGlzaHxlbnwwfHwwfHx8MA%3D%3D" alt="Radish">
+      <div class="product-info">
+        <h3>Radish</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Crisp and peppery, perfect for salads</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://images.unsplash.com/photo-1533231040102-5ec7a63e6d0a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVldHJvb3R8ZW58MHx8MHx8fDA%3D" alt="Beetroot">
+      <div class="product-info">
+        <h3>Beetroot</h3>
+        <div class="product-meta">
+          <span class="price">₹30/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Nutrient-dense and naturally sweet</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bulb Vegetables -->
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://images.unsplash.com/photo-1524593564501-fd747698ddf7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Onions">
+      <div class="product-info">
+        <h3>Onions</h3>
+        <div class="product-meta">
+          <span class="price">₹30/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Essential for Indian cooking, pungent flavor</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://plus.unsplash.com/premium_photo-1675731118551-79b3da05a5d4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2FybGljfGVufDB8fDB8fHww"alt="Garlic">
+      <div class="product-info">
+        <h3>Garlic</h3>
+        <div class="product-meta">
+          <span class="price">₹120/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Flavorful and aromatic, with health benefits</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leafy Greens -->
+    <div class="product-card"data-category="Leafy Greens">
+      <div class="product-badge organic">Organic</div>
+      <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Spinach">
+      <div class="product-info">
+        <h3>Spinach (Palak)</h3>
+        <div class="product-meta">
+          <span class="price">₹30/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Nutrient-rich organic spinach, freshly picked</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="Seeds">
+  <img src="https://images.unsplash.com/photo-1640671511581-0cc93ea3ebf2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fenugreek">
+  <div class="product-info">
+    <h3>Fenugreek (Methi)</h3>
+    <div class="product-meta">
+      <span class="price">₹40/kg</span>
+      <span class="stock">In Stock</span>
+    </div>
+    <p>Aromatic leaves with medicinal properties</p>
+    <div class="product-actions">
+      <div class="quantity-control">
+        <button class="quantity-btn minus">-</button>
+        <input type="number" class="quantity" value="0.25" min="0.25" step="0.25">
+        <button class="quantity-btn plus">+</button>
+        <span class="unit">kg</span>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="customer-reviews">
+      <h4>Customer Reviews</h4>
+      <div class="review-form">
+        <textarea placeholder="Write your review..."></textarea>
+        <button class="submit-review">Submit Review</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- More Vegetables -->
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://images.unsplash.com/photo-1605197378540-10ebaf6999e5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJpbmphbHxlbnwwfHwwfHx8MA%3D%3D" alt="Brinjal">
+      <div class="product-info">
+        <h3>Brinjal (Eggplant)</h3>
+        <div class="product-meta">
+          <span class="price">₹35/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Versatile vegetable for curries and stir-fries</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://images.unsplash.com/photo-1558408525-1092038389ae?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b2tyYXxlbnwwfHwwfHx8MA%3D%3D" alt="Okra">
+      <div class="product-info">
+        <h3>Okra (Lady Finger)</h3>
+        <div class="product-meta">
+          <span class="price">₹50/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and tender, perfect for bhindi masala</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="Vegetables">
+      <img src="https://plus.unsplash.com/premium_photo-1669870171202-0ca7a6f1a4fe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bell Pepper">
+      <div class="product-info">
+        <h3>Bell Pepper (Capsicum)</h3>
+        <div class="product-meta">
+          <span class="price">₹60/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Colorful and crunchy, available in red, yellow, green</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card"data-category="Vegetables">
+      <img src="https://media.istockphoto.com/id/1194258667/photo/bottle-gourd-for-sale-in-market.jpg?s=1024x1024&w=is&k=20&c=rmDr-KGaiUEaxCqaEQ6e_MakDj6klaXYE-StTySjPUM=" alt="Bottle Gourd">
+      <div class="product-info" >
+        <h3>Bottle Gourd (Lauki)</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Light and digestible, great for soups and curries</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card"data-category="Fruits">
+      <img src="https://plus.unsplash.com/premium_photo-1668076515507-c5bc223c99a4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9tZWdyYW5hdGV8ZW58MHx8MHx8fDA%3D" alt="Bottle Gourd">
+      <div class="product-info">
+        <h3>Pomagranate (Lauki)</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and juicy</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card"data-category="Fruits">
+      <img src="https://images.unsplash.com/photo-1543218024-57a70143c369?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFuYW5hfGVufDB8fDB8fHww" alt="Banana">
+      <div class="product-info">
+        <h3>Banana</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card"data-category="Fruits">
+      <img src="https://images.unsplash.com/photo-1600659090872-74ca5ca1023a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8R3VhdmF8ZW58MHx8MHx8fDA%3D" alt="Gauva">
+      <div class="product-info">
+        <h3>Gauva</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and juicy</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card" data-category="Fruits">
+  <img src="https://images.unsplash.com/photo-1563114773-84221bd62daa?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Watermelon">
+  <div class="product-info">
+    <h3>Watermelon</h3>
+    <div class="product-meta">
+      <span class="price">₹40/piece</span> <!-- Update the price as per your needs -->
+      <span class="stock">In Stock</span>
+    </div>
+    <p>Fresh and juicy</p>
+    <div class="product-actions">
+      <div class="quantity-control">
+        <button class="quantity-btn minus">-</button>
+        <input type="number" class="quantity" value="1" min="1" step="1">
+        <button class="quantity-btn plus">+</button>
+        <span class="unit">pcs</span>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="customer-reviews">
+      <h4>Customer Reviews</h4>
+      <div class="review-form">
+        <textarea placeholder="Write your review..."></textarea>
+        <button class="submit-review">Submit Review</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="product-card"data-category="Fruits">
+      <img src="https://plus.unsplash.com/premium_photo-1675731118661-15dc54c11130?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXdiZXJyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Strawberry">
+      <div class="product-info">
+        <h3>Strawberry</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and juicy</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card"data-category="Fruits">
+      <img src="https://images.unsplash.com/photo-1594002348772-bc0cb57ade8b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZWJlcnJ5fGVufDB8fDB8fHww" alt="Blueberry">
+      <div class="product-info">
+        <h3>Blueberry</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and juicy</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card"data-category="Fruits">
+      <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2l3aXxlbnwwfHwwfHx8MA%3D%3D" alt="kiwi">
+      <div class="product-info">
+        <h3>Kiwi</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and juicy</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card"data-category="Fruits">
+      <img src="https://plus.unsplash.com/premium_photo-1688671923138-ff74e0f9a810?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlcnJ5fGVufDB8fDB8fHww" alt="cherry">
+      <div class="product-info">
+        <h3>Cherry</h3>
+        <div class="product-meta">
+          <span class="price">₹20/kg</span>
+          <span class="stock">In Stock</span>
+        </div>
+        <p>Fresh and juicy</p>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" class="quantity" value="1" min="1" step="0.5">
+            <button class="quantity-btn plus">+</button>
+            <span class="unit">kg</span>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="customer-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-form">
+            <textarea placeholder="Write your review..."></textarea>
+            <button class="submit-review">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card" data-category="Vegetables">
+  <img src="https://images.unsplash.com/photo-1673268975159-478adec98368?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="drumstick">
+  <div class="product-info">
+    <h3>Drumstick</h3>
+    <div class="product-meta">
+      <span class="price">₹5/piece</span>
+      <span class="stock">In Stock</span>
+    </div>
+    <p>Fresh and juicy</p>
+    <div class="product-actions">
+      <div class="quantity-control">
+        <button class="quantity-btn minus">-</button>
+        <input type="number" class="quantity" value="1" min="1" step="1">
+        <button class="quantity-btn plus">+</button>
+        <span class="unit">pcs</span>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="customer-reviews">
+      <h4>Customer Reviews</h4>
+      <div class="review-form">
+        <textarea placeholder="Write your review..."></textarea>
+        <button class="submit-review">Submit Review</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="product-card" data-category="Fruits">
+  <img src="https://images.unsplash.com/photo-1590502593747-42a996133562?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="lemon">
+  <div class="product-info">
+    <h3>Lemon</h3>
+    <div class="product-meta">
+      <span class="price">₹5/piece</span>
+      <span class="stock">In Stock</span>
+    </div>
+    <p>Fresh and juicy</p>
+    <div class="product-actions">
+      <div class="quantity-control">
+        <button class="quantity-btn minus">-</button>
+        <input type="number" class="quantity" value="1" min="1" step="1">
+        <button class="quantity-btn plus">+</button>
+        <span class="unit">pcs</span>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="customer-reviews">
+      <h4>Customer Reviews</h4>
+      <div class="review-form">
+        <textarea placeholder="Write your review..."></textarea>
+        <button class="submit-review">Submit Review</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="product-card" data-category="Vegetables">
+  <img src="https://plus.unsplash.com/premium_photo-1670954423374-82c0d2a24eff?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2luZ2VyfGVufDB8fDB8fHww" alt="Ginger">
+  <div class="product-info">
+    <h3>Ginger</h3>
+    <div class="product-meta">
+      <span class="price">₹20/piece</span>
+      <span class="stock">In Stock</span>
+    </div>
+    <p>Fresh and juicy</p>
+    <div class="product-actions">
+      <div class="quantity-control">
+        <button class="quantity-btn minus">-</button>
+        <input type="number" class="quantity" value="1" min="1" step="1">
+        <button class="quantity-btn plus">+</button>
+        <span class="unit">pcs</span>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="customer-reviews">
+      <h4>Customer Reviews</h4>
+      <div class="review-form">
+        <textarea placeholder="Write your review..."></textarea>
+        <button class="submit-review">Submit Review</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Add more vegetables following the same pattern -->
+    
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FarmFresh</h4>
+        <p>Fresh from local farms to your home</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Countryside</p>
+        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FarmFresh. Made with <i class="fas fa-heart"></i> for local farmers.</p>
+    </div>
+  </footer>
+  <script>
+  // Live product search
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.product-card').forEach(card => {
+      const name = card.querySelector('h3').textContent.toLowerCase();
+      card.style.display = name.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.submit-review').forEach((button, index) => {
+    const productCard = button.closest('.product-card');
+    const textarea = productCard.querySelector('textarea');
+    const reviewList = document.createElement('div');
+    reviewList.classList.add('review-list');
+    productCard.querySelector('.customer-reviews').appendChild(reviewList);
+
+    const productId = productCard.querySelector('h3').textContent;
+
+    // Load stored reviews on page load
+    const stored = localStorage.getItem(`reviews-${productId}`);
+    if (stored) {
+      reviewList.innerHTML = JSON.parse(stored).map(r => `<p>• ${r}</p>`).join('');
+    }
+
+    button.addEventListener('click', () => {
+      const text = textarea.value.trim();
+      if (text) {
+        const reviews = JSON.parse(localStorage.getItem(`reviews-${productId}`)) || [];
+        reviews.push(text);
+        localStorage.setItem(`reviews-${productId}`, JSON.stringify(reviews));
+        reviewList.innerHTML += `<p>• ${text}</p>`;
+        textarea.value = '';
+      }
+    });
+  });
+</script>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
